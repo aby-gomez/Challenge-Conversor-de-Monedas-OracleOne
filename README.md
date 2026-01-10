@@ -67,6 +67,10 @@ API_KEY=tu_clave_aqui
 ## Funcionamiento General
 
 El usuario selecciona una opción de conversión desde un menú interactivo, ingresa un valor numérico y el sistema devuelve el monto convertido según la tasa de cambio actual obtenida desde la API.
+<div align = "center">
+<img  width="649" height="777" alt="image" src="https://github.com/user-attachments/assets/b2480760-c57b-44f8-8699-1216015943be" />
+</div>
+
 
 ### Monedas implementadas
 
