@@ -44,14 +44,15 @@ public class Main {
                 String[] currency = (listaConversiones.get(elegido)).split(" ");
                 String base = currency[0].trim();
                 String target = currency[1].trim();
-                Exchange conversion = conversorService.conversionPar(base,target,amount);
-                System.out.println("El valor "+amount+" "+base+" corresponde al valor final de "+conversion.conversion_result()+" "+target);
+                double result = conversorService.calculateExchange(base,target,amount);
+                System.out.println("El valor "+amount+" "+base+" corresponde al valor final de "+result+" "+target);
 
 
             }else{
                 System.out.println("Opcion inválida, intente nuevamente");
             }
             System.out.println();
+            ingreso.close();
         }
 
             }
