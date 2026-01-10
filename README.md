@@ -28,7 +28,7 @@ El objetivo del desafío es construir una aplicación de consola capaz de:
 - Filtrar monedas específicas mediante su *Currency Code*.
 - Calcular y mostrar conversiones entre distintas monedas.
 
-La API utilizada es **ExchangeRate-API**, que proporciona tasas de conversión actualizadas y endpoints específicos para consultas por pares de monedas.
+La API utilizada es <a href = "https://www.exchangerate-api.com/" style = "text-decoration: none;">**ExchangeRate-API**</a>, que proporciona tasas de conversión actualizadas y endpoints específicos para consultas por pares de monedas.
 
 ---
 
@@ -41,7 +41,16 @@ La API utilizada es **ExchangeRate-API**, que proporciona tasas de conversión a
 - HttpURLConnection (enfoque clásico)
 
 ---
+## Configuración del Proyecto
 
+La clave de la API se obtiene desde una **variable de entorno**, evitando exponer credenciales sensibles en el código fuente.
+Recuerda de generar tu propia API Key para probar el proyecto.
+
+```bash
+API_KEY=tu_clave_aqui
+
+```
+---
 ## Estructura del Proyecto
 
 - **Main**  
@@ -49,6 +58,9 @@ La API utilizada es **ExchangeRate-API**, que proporciona tasas de conversión a
 
 - **ConversorService**  
   Contiene la lógica de negocio, el consumo de la API y los cálculos de conversión.
+  
+- **Exchange**
+  Usando el concepto de DTO (Data Transfer Object), Exchange es una clase intermedia(Record) responsable de interpretar el JSON de la API.
 
 ---
 
@@ -99,10 +111,4 @@ La biblioteca **Gson** se utiliza para:
 
 ---
 
-## Configuración del Proyecto
 
-La clave de la API se obtiene desde una **variable de entorno**, evitando exponer credenciales sensibles en el código fuente.
-
-```bash
-API_KEY=tu_clave_aqui
->
