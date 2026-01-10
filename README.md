@@ -1,4 +1,5 @@
-# Conversor de Monedas en Java
+#  <img width="120" height="120" alt="Badge-Conversor" src="https://github.com/user-attachments/assets/1d3d4ac2-d53b-4d45-a726-8cbdb3ccf4f7" /> Conversor de Monedas en Java
+
 
 Proyecto desarrollado como parte del **challenge de conversión de monedas**, para **Alura y Oracle One**, utilizando Java, consumo de APIs REST y procesamiento de respuestas JSON.
 
